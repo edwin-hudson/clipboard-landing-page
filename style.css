@@ -124,6 +124,12 @@ section.options {
     margin: 2rem 0;
 }
 
+.storage-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .section-mid-1 {
     display: flex;
@@ -260,7 +266,97 @@ footer .bottom-logo {
         overflow: hidden;
     }
 
+    .container p.description {
+        width: 52%;
+    }
+
     .button-group {
         flex-direction: row;
     }
+
+    button {
+        width: 15rem;
+    }
+
+    .section.options {
+        width: 100%;
+    }
+
+    .section-mid-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    img.computer {
+        translate: -4%;
+    }
+    
+    .options-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 25rem;
+    }
+
+    .option-list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .option-list .head,
+    .option-list .desc {
+        text-align: left;
+    }
+
+    .availability{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .availability p.desc {
+        width: 45rem;
+    }
+    
+    .availability .devices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .workflow-functions {
+        flex-direction: row;
+        align-items: start;
+        width: 100%;
+        gap: 1.5rem;
+    }
+    
+    .flow-cards {
+        width: 30%;
+    }
+    
+    .partners {
+        flex-direction: row;
+        justify-content: center;
+        margin: 5rem 0;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
+
