@@ -4,10 +4,19 @@
 --Green-500: hsl(171, 66%, 44%);
 --Blue-100: hsl(233, 100%, 69%);
 
+
+--Green-border: hsl(170, 68%, 36%);
+--Blue-border: hsl(232, 56%, 55%);
+
+
 /* ### Neutral */
 
 --Gray-700: hsl(210, 10%, 33%);
 --Gray-500: hsl(201, 11%, 66%);
+
+--Gray-footer: hsl(220, 18%, 97%);
+
+--White: hsl(0, 0%, 100%);
 
 /* ## Typography */
 
@@ -20,4 +29,238 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 38rem;
+    overflow: hidden;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+picture .main-logo {
+    margin: 2rem 0;
+}
+
+article h1.heading,
+.storage-tag .heading,
+.availability .title,
+.workflow .title,
+.download .heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0.4rem;
+    color: var(--Gray-700);
+}
+
+article p.description,
+.storage-tag p.description,
+.availability .desc,
+.workflow .desc,
+.download .description {
+    font-size: 1.12rem;
+    text-align: center;
+    line-height: 1.8rem;
+    color: var(--Gray-500);
+    margin: 2.5rem 0;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+button {
+    width: 20rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--White);
+    border-bottom: solid 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.ios {
+    background: var(--Green-500);
+    border-color: var(--Green-border);
+    box-shadow: 0 1px 10px 0.2px var(--Green-500);
+}
+
+button.mac {
+    background: var(--Blue-100);
+    border-color: var(--Blue-border);
+    box-shadow: 0 1px 10px 0.2px var(--Blue-100);
+}
+
+section.options {
+    margin: 2rem 0;
+}
+
+
+.section-mid-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section-mid-1 .computer {
+    margin: 3rem 0;
+    width: 90%;
+}
+
+.device-image .devices {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.option-list .head,
+.workflow-functions .flow-cards .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2.5rem 0.4rem 0;
+    color: var(--Gray-700);
+}
+
+.option-list .desc,
+.workflow-functions .flow-cards .desc {
+    font-size: 1.12rem;
+    text-align: center;
+    line-height: 1.8rem;
+    color: var(--Gray-500);
+    margin: 1rem 0;
+}
+
+.workflow,
+.workflow-functions,
+.flow-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.partners img {
+    align-self: center;
+    margin: 2rem;
+}
+
+.workflow-functions .flow-cards img {
+    align-self: center;
+    margin: 2.5rem 0 0;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0 0;
+    padding: 3rem 0;
+    background: var(--Gray-footer);
+}
+
+footer .bottom-logo {
+    width: 4rem;
+    margin: 1.5rem 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+.link {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 500;
+    color: var(--Gray-700);
+    list-style-type: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.link:hover{
+    color: var(--Green-500);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.socials .icon {
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--Gray-700);
+    transition: all 0.3s ease;
+}
+
+.socials .icon:hover{
+    color: var(--Green-500);
+}
+
+
+@media screen and (min-width: 64rem) {
+    body {
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    .container {
+        width: 90%;
+        max-width: 90rem;
+        overflow: hidden;
+    }
+
+    .button-group {
+        flex-direction: row;
+    }
 }
